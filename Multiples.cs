@@ -1,6 +1,6 @@
 using System;
 
-namespace roject_euler
+namespace project_euler
 {
   // Problem 1 https://projecteuler.net/problem=1 
   // Find the sum of all the multiples of 3 or 5 below 1000.
@@ -15,7 +15,7 @@ namespace roject_euler
       value2 = b;
     }
 
-    private int GetSumOfMultiples()
+    public int GetSumOfMultiples()
     {
       for (int i = 0; i < 1000; i++)
       {

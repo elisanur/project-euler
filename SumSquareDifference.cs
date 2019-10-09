@@ -1,23 +1,32 @@
 using System;
 
-namespace roject_euler
+namespace project_euler
 {
   // Problem nro 6 https://projecteuler.net/problem=6 
   // Find the difference between the sum of the squares of the first one hundred natural numbers 
   // and the square of the sum.
   public class SumSquareDifference
   {
+    private int value;
+
+    public SumSquareDifference(int value)
+    {
+      this.value = value;
+    }
     public string ReturnMessage()
     {
 
-      Console.WriteLine("square of sum of natural numbers: " + (SumOfNaturalNumbers(1, 100) * SumOfNaturalNumbers(1, 100)));
+      /*      Console.WriteLine("square of sum of natural numbers: " + (SumOfNaturalNumbers(1, 100) * SumOfNaturalNumbers(1, 100)));
 
-      Console.WriteLine("sum of squares: " + SumOfSquares(100));
+            Console.WriteLine("sum of squares: " + SumOfSquares()); */
 
-      Console.WriteLine("positive difference between the sum of the squares of " +
-        "the first one hundred natural numbers and the square of the sum: " +
-        positiveDifference(SumOfSquares(100), SquareOfSumOfNaturalNumbers(100)));
+
       return "";
+    }
+
+    public int result()
+    {
+      return positiveDifference(SumOfSquares(), SquareOfSumOfNaturalNumbers());
     }
 
     public static int positiveDifference(int a, int b)
@@ -32,15 +41,15 @@ namespace roject_euler
       }
     }
 
-    public static int SquareOfSumOfNaturalNumbers(int x)
+    private int SquareOfSumOfNaturalNumbers()
     {
-      return SumOfNaturalNumbers(1, x) * SumOfNaturalNumbers(1, x);
+      return SumOfNaturalNumbers(1, this.value) * SumOfNaturalNumbers(1, this.value);
     }
 
-    public static int SumOfSquares(int x)
+    private int SumOfSquares()
     {
       int sumN = 0;
-      for (int i = 1; i < 101; i++)
+      for (int i = 0; i < this.value + 1; i++)
       {
         sumN = sumN + (i * i);
       }

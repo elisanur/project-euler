@@ -19,11 +19,18 @@ namespace project_euler
         if (userInput.Equals("q")){
           Console.WriteLine("moi");
         } else if (userInput.Equals("1")) {
+          Console.Clear();
           Console.WriteLine("Great! You selected Program 1, Multiples.");
+          MultiplesController mController = new MultiplesController();
+          mController.multiples();
         } else if (userInput.Equals("2")) {
+          Console.Clear();
           Console.WriteLine("Great! You selected Program 2, Largest Palindrome.");
         } else if (userInput.Equals("3")) {
-          Console.WriteLine("Great! You selected Program 1, Sum Square Difference.");
+          Console.Clear();
+          Console.WriteLine("Great! You selected Program 3, Sum Square Difference.");
+          SumSquareDifferenceController sController = new SumSquareDifferenceController();
+          sController.start();
         } else {
           Console.Clear();
           Console.WriteLine("I'm sorry I didn't quite understand you, please try following the instructions:");
