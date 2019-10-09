@@ -14,6 +14,7 @@ namespace project_euler
 
       Console.WriteLine("Find the difference between the sum of the squares of the first x natural "
       + "numbers and the square of the sum.");
+      Console.WriteLine("x should be between 1-1000");
       Console.WriteLine("E.g. if you give 100 as input, you should receive 25164150 as an answer");
 
       string userInput = Console.ReadLine();
@@ -21,7 +22,7 @@ namespace project_euler
       try
       {
         int input = System.Convert.ToInt32(userInput);
-        if (input > 1000 || input < 0)
+        if (input > 1000 || input < 1)
         {
           Console.Clear();
           Console.WriteLine("Please try again.");
