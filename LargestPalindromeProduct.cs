@@ -17,16 +17,16 @@ namespace project_euler
       this.secondPalindromeValue = secondPalindromeValue;
     }
 
-    private string BiggestPalindromeNumber()
+    public string BiggestPalindromeNumber()
     {
       int biggestPalindrome = -1;
       string palindrome = "";
 
-      if (this.firstPalindromeValue > -1 && this.firstPalindromeValue < 1000 && this.secondPalindromeValue > -1 && this.secondPalindromeValue < 1000)
+      if (this.firstPalindromeValue > -1 && this.firstPalindromeValue < 10000 && this.secondPalindromeValue > -1 && this.secondPalindromeValue < 10000)
       {
-        for (int i = 0; i < 999; i++)
+        for (int i = 0; i < firstPalindromeValue; i++)
         {
-          for (int j = 0; j < 999; j++)
+          for (int j = 0; j < secondPalindromeValue; j++)
           {
             if (IntIsPalindrome((i * j).ToString()))
             {
@@ -40,10 +40,10 @@ namespace project_euler
           }
         }
         return palindrome;
-      }
+    }
       else
       {
-        return "I couldn't find a palindrome product, did you insert whole numbers between 0 and 999?";
+        return "I couldn't find a palindrome product, did you insert whole numbers between 0 and 9999?";
       }
     }
 

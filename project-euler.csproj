@@ -6,8 +6,4 @@
     <RootNamespace>project_euler</RootNamespace>
   </PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="ElectronCgi.DotNet" Version="0.0.2" />
-  </ItemGroup>
-
 </Project>

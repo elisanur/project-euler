@@ -13,16 +13,6 @@ namespace project_euler
     {
       this.value = value;
     }
-    public string ReturnMessage()
-    {
-
-      /*      Console.WriteLine("square of sum of natural numbers: " + (SumOfNaturalNumbers(1, 100) * SumOfNaturalNumbers(1, 100)));
-
-            Console.WriteLine("sum of squares: " + SumOfSquares()); */
-
-
-      return "";
-    }
 
     public int result()
     {

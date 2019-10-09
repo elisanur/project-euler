@@ -14,10 +14,12 @@ namespace project_euler
         Console.WriteLine("2: Largest Palindrome");
         Console.WriteLine("3: Sum square difference");
 
+        Console.Write("Selected program: ");
         string userInput = Console.ReadLine();
 
         if (userInput.Equals("q")){
-          Console.WriteLine("moi");
+          Console.Clear();
+          Console.WriteLine("_______________________________________________________________________________________");
         } else if (userInput.Equals("1")) {
           Console.Clear();
           Console.WriteLine("Great! You selected Program 1, Multiples.");
@@ -26,6 +28,8 @@ namespace project_euler
         } else if (userInput.Equals("2")) {
           Console.Clear();
           Console.WriteLine("Great! You selected Program 2, Largest Palindrome.");
+          LargestPalindromeProductController lController = new LargestPalindromeProductController();
+          lController.start();
         } else if (userInput.Equals("3")) {
           Console.Clear();
           Console.WriteLine("Great! You selected Program 3, Sum Square Difference.");

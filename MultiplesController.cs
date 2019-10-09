@@ -16,7 +16,6 @@ namespace project_euler
       Console.WriteLine("Find the sum of all the multiples of x or y below 1000.");
       Console.WriteLine("e.g. giving input 3 and 5, you should receive 233168 as an answer");
       Console.WriteLine("Please remember to give one number at a time and press enter.");
-      Console.WriteLine("Press q and enter to quit anytime.");
 
       Console.Write("x: ");
       string userInput1 = Console.ReadLine();
@@ -31,7 +30,9 @@ namespace project_euler
         Console.WriteLine("Answer is: " + multiples.GetSumOfMultiples());
         Console.WriteLine("_______________________________________________________________________________________");
       } catch {
+        Console.Clear();
         Console.WriteLine("Please try again");
+        Console.WriteLine("_______________________________________________________________________________________");
       }
     }
 
