@@ -1,0 +1,7 @@
+# Project euler
+Console app for solving problems in https://projecteuler.net/archives
+App includes problems 1, 4 and 6.
+
+## Testing
+Go to test folder .../project-euler.tests
+Run from command line: dotnet test
